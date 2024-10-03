@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2b7af0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        main h2 {
+            color: #333;
+        }
+        .cart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .cart-item-info h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .cart-item-info p {
+            margin: 0;
+            color: #777;
+        }
+        .cart-item-price {
+            font-size: 16px;
+            color: #333;
+        }
+        .total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .checkout-button {
+            background-color: #33da33;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .checkout-button:hover {
+            background-color: #73ef73;
+        }
+        footer {
+            background-color: #2b7af0;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <div class="cart-item-info">
+                    <h3>Pizza</h3>
+                    <p>Quantity: 1</p>
+                </div>
+                <div class="cart-item-price">Rs.350</div>
+            </div>
+            <div class="cart-item">
+                <img src="images/burger.jpg" alt="Burger">
+                <div class="cart-item-info">
+                    <h3>Burgers</h3>
+                    <p>Quantity: 2</p>
+                </div>
+                <div class="cart-item-price">Rs.140</div>
+            </div>
+            <!-- Add more cart items as needed -->
+            <div class="total">
+                <span>Total:</span>
+                <span>Rs.490</span>
+            </div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Ordering</p>
+    </footer>
+</body>
+</html>

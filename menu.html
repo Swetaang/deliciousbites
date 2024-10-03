@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2b7af0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        main h2 {
+            color: #333;
+        }
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .menu-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .menu-info .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .order-button,
+        .add-to-cart-button {
+            background-color: #33da33;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+        }
+        .order-button:hover,
+        .add-to-cart-button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #2b7af0;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Explore Our Delicious Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <div class="menu-info">
+                    <h3>Pizza</h3>
+                    <div class="buttons">
+                        <button class="order-button" data-item="Pizza">Order</button>
+                        <button class="add-to-cart-button" data-item="Pizza">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/burger.jpg" alt="Burger">
+                <div class="menu-info">
+                    <h3>Burgers</h3>
+                    <div class="buttons">
+                        <button class="order-button" data-item="Burgers">Order</button>
+                        <button class="add-to-cart-button" data-item="Burgers">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/biryani.jpg" alt="biryani">
+                <div class="menu-info">
+                    <h3>Biryani</h3>
+                    <div class="buttons">
+                        <button class="order-button" data-item="Biryani">Order</button>
+                        <button class="add-to-cart-button" data-item="Biryani">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/salad.jpg" alt="Salad">
+                <div class="menu-info">
+                    <h3>Salads</h3>
+                    <div class="buttons">
+                        <button class="order-button" data-item="Salads">  Order  </button>
+                        <button class="add-to-cart-button" data-item="Salads">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img width="200px" height="200px" src="images/dessert.jpg" alt="Dessert">
+                <div class="menu-info">
+                    <h3>Desserts</h3>
+                    <div class="buttons">
+                        <button class="order-button" data-item="Desserts">Order</button>
+                        <button class="add-to-cart-button" data-item="Desserts">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Ordering</p>
+    </footer>
+</body>
+</html>
